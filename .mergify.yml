@@ -1,0 +1,10 @@
+pull_request_rules: []
+queue_rules:
+  - name: h1-exp029-stale-queue-1786765045
+    queue_conditions:
+      - or:
+          - base = h1-exp029-pre-target-1786765045
+          - base = h1-exp029-post-target-1786765045
+    merge_conditions: []
+    merge_method: squash
+    batch_size: 1
